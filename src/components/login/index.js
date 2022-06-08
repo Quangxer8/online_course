@@ -53,6 +53,10 @@ function Login (props){
         props.navigation.navigate('home');
     }
 
+    function loginGoolge() {
+        props.navigation.navigate('mess-all');
+    }
+
 
     const errorValidate = <View style={{width: "100%", height: "100%", position: "absolute", zIndex: 9, alignItems: "center", backgroundColor: "rgba(0,0,0,0.6)", justifyContent: "center"}}>
         <View style={{width: "90%", height: "30%", alignItems: "center", backgroundColor: "rgba(255, 250, 210, 1)", borderRadius: 15}}>
@@ -107,6 +111,7 @@ function Login (props){
                     </TouchableOpacity>
                     <TouchableOpacity
                         style ={style.googleIcon}
+                        onPress ={ loginGoolge}
                         >
                             <View style={{flexDirection: "row",}}>
                                 <Icon name="google-" type="entypo" color="white"  />
