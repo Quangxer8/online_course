@@ -8,6 +8,7 @@ import ScreenCourse from './screen-course';
 import ScreenPdf from './screen-pdf';
 import ScreenPutData from './screen-put-course';
 import ScreenCourseMajor from './screen-course-major';
+import ScreenMessAll from './mess-all';
 
 export {
     UserLogin,
@@ -19,5 +20,6 @@ export {
     ScreenCourse,
     ScreenPdf,
     ScreenPutData,
-    ScreenCourseMajor
+    ScreenCourseMajor,
+    ScreenMessAll
 }

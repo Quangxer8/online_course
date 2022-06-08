@@ -1,4 +1,4 @@
-import React, {} from 'react';
+import React,{} from 'react';
 import { ForgotPassword } from '../../components/index';
 
 function FormForgotPassword ({navigation}){

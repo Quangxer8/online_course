@@ -13,7 +13,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { FormStart, UserLogin, FormForgotPassword, FormRegister, Home, VideoCourse, ScreenVideo, ScreenCourse, ScreenPdf, ScreenPutData, ScreenCourseMajor } from './src/screen/insex';
+import { FormStart, UserLogin, FormForgotPassword, FormRegister, Home, VideoCourse, ScreenVideo, ScreenCourse, ScreenPdf, ScreenPutData, ScreenCourseMajor, ScreenMessAll } from './src/screen/insex';
 
 import { createStore, applyMiddleware} from 'redux';
 import createSagaMiddleware from 'redux-saga';
@@ -47,6 +47,7 @@ function App (){
           <Stack.Screen name="course-detail" options= {{headerShown: false}} component={ScreenCourse} />  
           <Stack.Screen name="showPdf" options= {{headerShown: false}} component={ScreenPdf} /> 
           <Stack.Screen name="course-major" options= {{headerShown: false}} component={ScreenCourseMajor} /> 
+          <Stack.Screen name="mess-all" options={{headerShown: false}} component={ScreenMessAll} />
         </Stack.Navigator>
         {/* <Tab.Navigator
           screenOptions = { ({route}) => (<View></View>)}
